@@ -7,23 +7,37 @@
 
   <body>
     <h1>Ferret</h1>
+    <hr />                                                          //--- Horizontal rule element
     <img
       src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Ferret_2008.png/440px-Ferret_2008.png"
       alt="Domesticated ferret"
     />
 
-    <a href="https://en.wikipedia.org/wiki/Ferret">Wiki</a>
-    <a href="about-ferrets.html">About ferrets</a>
+    <div>
+      <a href="https://en.wikipedia.org/wiki/Ferret"
+        >Go to <span>Wiki</span>                                    //--- Span element is inline
+      </a>
+      <a href="about-ferrets.html">About ferrets</a>
+    </div>
+
+    <p>
+      Don’t pull the thang out, unless you plan to bang <br />      //--- Break of the line, used for example in poems
+      Bombs over Baghdad! <br />
+      Yeah, don’t even bang unless you plan to hit something <br />
+      Bombs over Baghdad! <br />
+    </p>
 
     <p>
       The <b>ferret</b> (Mustela putorius furo) is the domesticated form of the
       European polecat, a mammal belonging to the same genus as the
       <a href="https://en.wikipedia.org/wiki/Weasel">weasel</a> , Mustela, in
-      the family Mustelidae.[1] Their fur is typically brown, black, white, or
-      mixed. They have an average length of 51 cm (20 in), including a 13 cm
-      (5.1 in) tail, weigh about between 0.7 and 2.0 kg (1.5 and 4.4 lb), and
-      have a natural lifespan of 7 to 10 years.[2] Ferrets are sexually
-      dimorphic predators, with males being substantially larger than females.
+      the family Mustelidae.<sup><a href="somesource.com">[1]</a></sup> Their       //--- Superscript tag with nested anchor tag
+      fur is typically brown, black, white, or mixed. They have an average
+      length of 51 cm (20 in), including a 13 cm (5.1 in) tail, weigh about
+      between 0.7 and 2.0 kg (1.5 and 4.4 lb), and have a natural lifespan of 7
+      to 10 years.<sup><a href="somesource.com">[2]</a></sup> Ferrets are           //--- Superscript tag with nested anchor tag
+      sexually dimorphic predators, with males being substantially larger than
+      females.
     </p>
 
     <p>
@@ -58,6 +72,7 @@
     <h4>Description</h4>
     <h5>I AM H5</h5>
     <h6>I AM H6</h6>
+
     <p>
       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem
       quod error ratione in consequuntur, alias est molestiae aperiam tempore
@@ -72,7 +87,7 @@
     </p>
 
     <h3>Colors</h3>
-    <ul>
+    <ul>                            //--- Unordered list with a nested unordered list and an orderred list
       <li>Darker</li>
       <ul>
         <li>Sable</li>
@@ -84,5 +99,11 @@
         <li>Dark eyed white</li>
       </ol>
     </ul>
+
+    <h2>I like H<sub>2</sub>O</h2>
+
+    <p><sup>1</sup>/<sub>2</sub> + <sup>1</sup>/<sub>2</sub> = 1</p>        //--- Superscript and subscript tags in one line
+
+    <h2>1 &lt 6 &gt 4 &amp; &spades; &hearts;</h2>            //--- Entity elements 
   </body>
 </html>

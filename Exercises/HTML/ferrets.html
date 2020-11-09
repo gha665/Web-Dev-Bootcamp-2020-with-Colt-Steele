@@ -6,16 +6,19 @@
   </head>
 
   <body>
-      <nav>
-          <ul>
-              <li><a href="home">Home</a></li>
-              <li><a href="about-ferrets.html">About</a></li>
-              <li><a href="contact">Contact</a></li>
-          </ul>
-      </nav>
+      <header>
+          <nav>
+              <ul>
+                  <li><a href="home">Home</a></li>
+                  <li><a href="about-ferrets.html">About</a></li>
+                  <li><a href="contact">Contact</a></li>
+              </ul>
+          </nav>
+          
+          <h1>Ferret</h1>
+      </header>
 
     <main>                  <!-- "Main" element incorporating all the MAIN (non repetitive content) -->
-      <h1>Ferret</h1>
       <hr />                <!-- Horizontal rule element -->
       <img
         src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Ferret_2008.png/440px-Ferret_2008.png"
@@ -24,7 +27,7 @@
 
       <div>
         <a href="https://en.wikipedia.org/wiki/Ferret"
-          >Go to <span>Wiki</span>              <!-- Span element is inline -->
+          >Go to <span>Wiki</span>                                      <!-- Span element is inline -->
         </a>
         <a href="about-ferrets.html">About ferrets</a>
       </div>
@@ -80,44 +83,58 @@
           </p>
       </section>
 
-      <h2>Biology</h2>
-      <h3>Characteristics</h3>
-      <h4>Description</h4>
-      <h5>I AM H5</h5>
-      <h6>I AM H6</h6>
+      <article>                         <!-- Article element -->
+          <h2>Biology</h2>
+          <h3>Characteristics</h3>
+          <h4>Description</h4>
+          <h5>I AM H5</h5>
+          <h6>I AM H6</h6>
+    
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem
+            quod error ratione in consequuntur, alias est molestiae aperiam tempore
+            officia eos inventore illo repellat a vitae at temporibus. Ratione,
+            sequi. Reprehenderit maxime distinctio magni laudantium doloremque? Iure
+            ad, voluptatibus exercitationem soluta non ea veritatis quos nesciunt
+            ducimus commodi dolores laudantium reprehenderit corporis aliquid ipsum
+            officia placeat eos quod necessitatibus temporibus. Iste deleniti veniam
+            magnam quis explicabo quae, cupiditate, odio repudiandae vero, nisi odit
+            animi? Commodi, adipisci ducimus ab provident eveniet nostrum vitae
+            doloribus ullam omnis, dignissimos repudiandae? Autem, atque deleniti.
+          </p>
+      </article>
 
-      <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem
-        quod error ratione in consequuntur, alias est molestiae aperiam tempore
-        officia eos inventore illo repellat a vitae at temporibus. Ratione,
-        sequi. Reprehenderit maxime distinctio magni laudantium doloremque? Iure
-        ad, voluptatibus exercitationem soluta non ea veritatis quos nesciunt
-        ducimus commodi dolores laudantium reprehenderit corporis aliquid ipsum
-        officia placeat eos quod necessitatibus temporibus. Iste deleniti veniam
-        magnam quis explicabo quae, cupiditate, odio repudiandae vero, nisi odit
-        animi? Commodi, adipisci ducimus ab provident eveniet nostrum vitae
-        doloribus ullam omnis, dignissimos repudiandae? Autem, atque deleniti.
-      </p>
-
-      <h3>Colors</h3>
-      <ul>                  <!-- Unordered list with a nested unordered list and an orderred list -->
-        <li>Darker</li>
-        <ul>
-          <li>Sable</li>
-          <li>Silver</li>
-        </ul>
-        <li>Lighter</li>
-        <ol>
-          <li>Albino</li>
-          <li>Dark eyed white</li>
-        </ol>
-      </ul>
-
-      <h2>I like H<sub>2</sub>O</h2>
-
-      <p><sup>1</sup>/<sub>2</sub> + <sup>1</sup>/<sub>2</sub> = 1</p>          <!-- Superscript and subscript tags in one line -->
-
-      <h2>1 &lt 6 &gt 4 &amp; &spades; &hearts;</h2>                            <!-- Entity elements  -->
+      <section>
+          <h3>Colors</h3>
+          <ul>                  <!-- Unordered list with a nested unordered list and an orderred list -->
+            <li>Darker</li>
+            <ul>
+              <li>Sable</li>
+              <li>Silver</li>
+            </ul>
+            <li>Lighter</li>
+            <ol>
+              <li>Albino</li>
+              <li>Dark eyed white</li>
+            </ol>
+          </ul>
+    
+          <h2>I like H<sub>2</sub>O</h2>
+    
+          <p><sup>1</sup>/<sub>2</sub> + <sup>1</sup>/<sub>2</sub> = 1</p>          <!-- Superscript and subscript tags in one line -->
+    
+          <h2>1 &lt 6 &gt 4 &amp; &spades; &hearts;</h2>                            <!-- Entity elements  -->
+      </section>
     </main>
+
+    <hr>
+
+    <footer>                                                                        <!-- Footer element -->
+        <p>This is the footer of my website</p>
+        <ul>
+            <li><a href="contact">Contact</a></li>
+            <li><a href="help">Help</a></li>
+        </ul>
+    </footer>
   </body>
 </html>

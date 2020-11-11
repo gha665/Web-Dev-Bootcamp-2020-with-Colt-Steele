@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <h1>Forms Demo</h1>
+
+    <form action="/tacos">
+      <div>
+        <!-- "FOR" and "ID" attributes MUST be identical for the same input! -->
+        <label for="username">Enter a username</label>
+        <input id="username" type="text" placeholder="username" />
+      </div>
+
+      <div>
+        <label for="password">Enter a password</label>
+        <input id="password" type="password" placeholder="password" />
+      </div>
+
+      <div>
+        <label for="color">Enter a color</label>
+        <input id="color" type="color" />
+      </div>
+
+      <div>
+        <!-- Alternative way to label an input (less common, but doesn't require "FOR" and "ID") -->
+        <label>
+          Enter a number
+          <input type="number" placeholder="enter a number" />
+        </label>
+      </div>
+
+      <!-- This button doesn't submit the form b/c of the "type attribute" -->
+      <button type="button">Regular button (won't submit)</button>
+
+      <!-- Button inside the form submits the form automatically -->
+      <button>Submit!!!</button>
+
+      <!-- So does this one (even though not a button) -->
+      <input type="submit" name="" id="" value="Click me!" />
+    </form>
+    <hr />
+
+    <!-- Button outside the form doesn't submit the form -->
+    <button>Outside of form button</button>
+  </body>
+</html>

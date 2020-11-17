@@ -13,24 +13,38 @@
       <div>
         <!-- "FOR" and "ID" attributes MUST be identical for the same input! -->
         <label for="username">Enter a username</label>
-        <input id="username" type="text" placeholder="username" />
+        <input
+          id="username"
+          type="text"
+          placeholder="username"
+          name="username"
+        />
+        <!-- The "name" attribute above gives a name of an <input> element. Без этого аттрибута значения формы НЕ ОТПРАВЯТСЯ НА СЕРВЕР! -->
       </div>
 
       <div>
         <label for="password">Enter a password</label>
-        <input id="password" type="password" placeholder="password" />
+        <input
+          id="password"
+          type="password"
+          placeholder="password"
+          name="password"
+        />
+        <!-- The "name" attribute above gives a name of an <input> element. Без этого аттрибута значения формы НЕ ОТПРАВЯТСЯ  НА СЕРВЕР! -->
       </div>
 
       <div>
         <label for="color">Enter a color</label>
-        <input id="color" type="color" />
+        <input id="color" type="color" name="color" />
+        <!-- The "name" attribute above gives a name of an <input> element. Без этого аттрибута значения формы НЕ ОТПРАВЯТСЯ  НА СЕРВЕР! -->
       </div>
 
       <div>
         <!-- Alternative way to label an input (less common, but doesn't require "FOR" and "ID") -->
         <label>
           Enter a number
-          <input type="number" placeholder="enter a number" />
+          <input type="number" placeholder="enter a number" name="num" />
+          <!-- The "name" attribute above gives a name of an <input> element. Без этого аттрибута значения формы НЕ ОТПРАВЯТСЯ  НА СЕРВЕР! -->
         </label>
       </div>
 

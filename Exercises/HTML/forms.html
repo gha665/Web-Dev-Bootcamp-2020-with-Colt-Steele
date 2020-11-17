@@ -44,7 +44,7 @@
         <label>
           Enter a number
           <input type="number" placeholder="enter a number" name="num" />
-          <!-- The "name" attribute above gives a name of an <input> element. Без этого аттрибута значения формы НЕ ОТПРАВЯТСЯ  НА СЕРВЕР! -->
+          <!-- The "name" attribute above gives a name of an <input> element. Без этого атрибута значения формы НЕ ОТПРАВЯТСЯ  НА СЕРВЕР! -->
         </label>
       </div>
 
@@ -61,5 +61,47 @@
 
     <!-- Button outside the form doesn't submit the form -->
     <button>Outside of form button</button>
+    <hr />
+
+    <h2>More inputs!</h2>
+    <h3>Checkbox</h3>
+    <form action="/flowers">
+      <input type="checkbox" name="agree_tos" id="agree" checked />
+      <label for="agree">I agree to everything</label>
+      <button>Submit</button>
+    </form>
+    <hr />
+
+    <h3>Radio buttons</h3>
+    <form action="/tshirts">
+      <label for="xs">XS:</label>
+      <input type="radio" name="size" id="xs" value="xs" />
+      <!-- To connect radio buttons together, so you can only select one, they must have THE SAME NAME -->
+
+      <label for="s">S:</label>
+      <input type="radio" name="size" id="s" value="s" />
+      <!-- To let the machine know whisch radio button the user selects, we must SPECIFY THE VALUE -->
+
+      <label for="m">M:</label>
+      <input type="radio" name="size" id="m" value="m" />
+
+      <label for="l">L:</label>
+      <input type="radio" name="size" id="l" value="l" />
+
+      <button>Submit</button>
+    </form>
+    <hr />
+
+    <h3>Select element</h3>
+    <form action="/meals">
+      <label for="meal">Please select an entree</label>
+      <select name="meal" id="meal">
+        <option value="">-- Click to make a selection --</option>
+        <option value="fish">Fish</option>
+        <option value="steak">Steak</option>
+        <option value="veg">Vegetarian</option>
+      </select>
+      <button>Submit</button>
+    </form>
   </body>
 </html>

@@ -16,8 +16,8 @@
         <input
           id="username"
           type="text"
-          placeholder="username"
           name="username"
+          placeholder="username"
         />
         <!-- The "name" attribute above gives a name of an <input> element. Без этого аттрибута значения формы НЕ ОТПРАВЯТСЯ НА СЕРВЕР! -->
       </div>
@@ -27,8 +27,8 @@
         <input
           id="password"
           type="password"
-          placeholder="password"
           name="password"
+          placeholder="password"
         />
         <!-- The "name" attribute above gives a name of an <input> element. Без этого аттрибута значения формы НЕ ОТПРАВЯТСЯ  НА СЕРВЕР! -->
       </div>
@@ -44,7 +44,7 @@
         <label>
           Enter a number
           <input type="number" placeholder="enter a number" name="num" />
-          <!-- The "name" attribute above gives a name of an <input> element. Без этого атрибута значения формы НЕ ОТПРАВЯТСЯ  НА СЕРВЕР! -->
+          <!-- Can also be given additional attributes e.g. min="1" max="1000" step="5" -->
         </label>
       </div>
 
@@ -64,9 +64,11 @@
     <hr />
 
     <h2>More inputs!</h2>
+
     <h3>Checkbox</h3>
     <form action="/flowers">
-      <input type="checkbox" name="agree_tos" id="agree" checked />
+      <!-- The "checked" attribute makes the checkbox checked by default -->
+      <input id="agree" type="checkbox" name="agree_tos" checked />
       <label for="agree">I agree to everything</label>
       <button>Submit</button>
     </form>
@@ -80,7 +82,7 @@
 
       <label for="s">S:</label>
       <input type="radio" name="size" id="s" value="s" />
-      <!-- To let the machine know whisch radio button the user selects, we must SPECIFY THE VALUE -->
+      <!-- To let the machine know which radio button the user selects, we must SPECIFY THE VALUE -->
 
       <label for="m">M:</label>
       <input type="radio" name="size" id="m" value="m" />
@@ -96,12 +98,46 @@
     <form action="/meals">
       <label for="meal">Please select an entree</label>
       <select name="meal" id="meal">
+        <!-- Can make a dummy selelect option first as shown below -->
         <option value="">-- Click to make a selection --</option>
         <option value="fish">Fish</option>
         <option value="steak">Steak</option>
         <option value="veg">Vegetarian</option>
+        <!-- Select options MUST HAVE A VALUE corresponding to the text -->
       </select>
       <button>Submit</button>
     </form>
+    <hr />
+
+    <h3>Range element</h3>
+    <form action="/screen-settings">
+      <label for="saturation">Picture saturation</label>
+      <input
+        id="saturation"
+        type="range"
+        name="picture_saturation"
+        min="1"
+        max="10"
+        step="2"
+      />
+      <!-- Can also be given initial value (the range will start there) e.g. value="5" -->
+      <button>Submit</button>
+    </form>
+    <hr />
+
+    <h3>Textarea element</h3>
+    <div>
+      <label for="textarea">Any special requests?</label>
+      <br />
+      <!-- This is NOT an <input> element -->
+      <textarea
+        id="textarea"
+        name="requests"
+        cols="30"
+        rows="5"
+        placeholder="Type something here"
+      ></textarea>
+      <button>Submit</button>
+    </div>
   </body>
 </html>

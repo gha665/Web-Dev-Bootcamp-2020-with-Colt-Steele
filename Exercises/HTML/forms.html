@@ -43,8 +43,14 @@
         <!-- Alternative way to label an input (less common, but doesn't require "FOR" and "ID") -->
         <label>
           Enter a number
-          <input type="number" placeholder="enter a number" name="num" />
-          <!-- Can also be given additional attributes e.g. min="1" max="1000" step="5" -->
+          <input
+            type="number"
+            placeholder="enter a number"
+            name="num"
+            min="1"
+            max="1000"
+          />
+          <!-- Can also be given additional attributes e.g. min="1", max="1000", step="5" -->
         </label>
       </div>
 
@@ -139,5 +145,43 @@
       ></textarea>
       <button>Submit</button>
     </div>
+    <hr />
+
+    <h2>Validations Demo</h2>
+    <form action="/dummy">
+      <label for="first">Enter first name</label>
+      <input type="text" name="first" id="first" required />
+      <!-- PAy attention to the "required" attribute! -->
+
+      <div>
+        <label for="username">Username</label>
+        <input
+          type="text"
+          name="username"
+          id="username"
+          minlength="5"
+          maxlength="20"
+          required
+        />
+        <!-- Can also be given additional attributes e.g. minlength="5", maxlength="20" -->
+      </div>
+
+      <div>
+        <label for="email">Type your email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="e.g. user@server.com"
+        />
+      </div>
+
+      <div>
+        <label for="url">Paste the URL</label>
+        <input type="url" name="url" id="url" required />
+      </div>
+
+      <button>Submit</button>
+    </form>
   </body>
 </html>

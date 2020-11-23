@@ -1,0 +1,18 @@
+h1 {
+  text-align: center;
+  font-weight: 400;
+  /* "font-weight: normal" is the same as 400 in this case */
+  text-decoration: #9f1c19 wavy overline;
+  letter-spacing: 15px;
+  font-size: 60px;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  line-height: 2;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  /* fonts are picked by machine by priority from left to right Verdana -> Geneva -> Tahoma -> or any "sans-serif" at the absolute worst case */
+}

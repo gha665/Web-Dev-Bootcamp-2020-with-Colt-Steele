@@ -17,6 +17,7 @@ h2 {
   color: #1d3557;
 }
 
+/* selects by ID */
 #signup {
   background-color: #1d3557;
   color: #f1faee;
@@ -26,6 +27,7 @@ span {
   color: #457b9d;
 }
 
+/* selects by CLASS */
 .tag {
   background-color: #e63946;
   color: #f1faee;
@@ -34,10 +36,48 @@ span {
 
 /* decendent selector: element nested inside class */
 .post a {
-  color: #457b9d;
+  color: magenta;
+  font-weight: 700;
+  text-decoration: none;
 }
 
 /* descendent selector (even though it's FOUR levels down in HTML) */
 footer a {
   color: #ffcad4;
+}
+
+/* adjacent combinator (targets the element RIGHT AFTER the first mentioned one) */
+h2 + button {
+  font-size: 20px;
+}
+
+/* direct-descendent (direct child) */
+footer > a {
+  color: #3a86ff;
+}
+
+/* attribute selector. Here selects input with type="password" attribute */
+input[type="password"] {
+  color: #c44536;
+}
+/* attribute selector. Here selects anchor tag with href CONTAINING "google". More variants available in documentation */
+a[href*="google"] {
+  color: aqua;
+}
+
+/* pseudo-class :hover here applies only to buttons with class="post" */
+.post button:hover {
+  background-color: #e63946;
+  color: #f1faee;
+}
+.post a:hover {
+  text-decoration: underline;
+}
+/* pseudo-class ;active here makes a button a different background color WHEN PRESSED */
+.post button:active {
+  background-color: #ffcbf2;
+}
+/* here pseudo-class :nth-of-type() selects only EVERY OTHER element with class="post", because indicated by "2n" */
+.post:nth-of-type(2n) {
+  background-color: #dfe8dc;
 }

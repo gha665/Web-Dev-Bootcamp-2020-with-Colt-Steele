@@ -1,0 +1,27 @@
+body {
+  color: purple;
+  /* ALL elements inherit the properties from the parent element <body>, even though the <body> itself doesn't have any text in it */
+}
+
+/* h1 {
+    color: blue;
+} */
+/* property "color" above is set specificly for <h1>, otherwise it would inherit the <body> styles */
+
+section {
+  /* all content here inherits fron a closer element <section>, not <body> */
+  color: aqua;
+}
+
+form {
+  /* here <input> and <button> don't inherit from the <form> (certain elements don't do it by default) */
+  color: brown;
+}
+/* DA WORKAROUND for inheritance */
+input,
+button {
+  color: inherit;
+  /* elements above inherit styles from THE NEAREST element with that properties */
+}
+
+/* some properties are NON-INHERITABLE like background, border, padding, margin, width, height, position, and others. Refer to MDN */

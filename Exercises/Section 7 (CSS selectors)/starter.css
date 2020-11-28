@@ -65,7 +65,8 @@ a[href*="google"] {
   color: aqua;
 }
 
-/* pseudo-class :hover here applies only to buttons with class="post" */
+/* ---------------- PSEUDO CLASSES ---------------- */
+/* pseudo class :hover here applies only to buttons with class="post" */
 .post button:hover {
   background-color: #e63946;
   color: #f1faee;
@@ -73,11 +74,40 @@ a[href*="google"] {
 .post a:hover {
   text-decoration: underline;
 }
-/* pseudo-class ;active here makes a button a different background color WHEN PRESSED */
+/* pseudo class :active here makes a button a different background color WHEN PRESSED */
 .post button:active {
   background-color: #ffcbf2;
 }
-/* here pseudo-class :nth-of-type() selects only EVERY OTHER element with class="post", because indicated by "2n" */
+/* here pseudo class :nth-of-type() selects only EVERY OTHER element with class="post", because indicated by "2n" */
 .post:nth-of-type(2n) {
   background-color: #dfe8dc;
 }
+
+/* ---------------- PSEUDO ELEMENTS ---------------- */
+/* pseudo element selects PARTICULAR PIECES rather than stated as in pseudo classes */
+/* syntax: has DOUBLE COLON unlike pseudo class (but even a single colon works in Chrome) */
+h2::first-letter {
+  font-size: 50px;
+}
+p::first-line {
+  color: #3a86ff;
+}
+/* выделение */
+p::selection {
+  background-color: #fcbf49;
+}
+
+/* ---------------- SPECIFICITY ---------------- */
+/* Chart of specificity: 
+1. "!important" (the most specific possible label overriding all other declarations - STAY AWAY)
+2. Inline styles inside HTML (BAD!!! DON'T USE!!!) 
+3. ID Selectors
+4. Class, Attribute & Pseudo-Class Selectors
+5. Element and Pseudo-Element Selectors
+*/
+/* button {
+            background-color: khaki !important;
+          } */
+/* example above overwrites background-color to every button in document */
+/* -------------------------------- */
+

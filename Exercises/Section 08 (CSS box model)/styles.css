@@ -1,0 +1,36 @@
+div {
+  width: 200px;
+  height: 200px;
+  /* sets the width and the height of the CONTENT BOX (the element) */
+}
+
+h1 {
+  background-color: pink;
+  width: 100px;
+}
+
+#one {
+  background-color: #ffcdb2;
+  border-width: 5px;
+  border-style: solid;
+  border-color: blue;
+  /* border adds 5px on top, right, right and left of box. Box is no longer 200x200, but 210x210  */
+  box-sizing: border-box;
+  /* property above fixes the problem */
+}
+
+#two {
+  background-color: #ffb4a2;
+  border-width: 3px;
+  border-style: dashed;
+  border-color: #06d6a0;
+  border-left-width: 8px;
+}
+
+#three {
+  background-color: #e5989b;
+  border: 4px solid #9d4edd;
+  /* shorthand for three main border properties: 1. THICKNESS, 2. STYLE, 3. COLOR */
+  border-right-style: double;
+  border-radius: 50% 20% / 10% 40%;
+}

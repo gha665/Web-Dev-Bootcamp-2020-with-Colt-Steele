@@ -1,0 +1,44 @@
+.h1-demo h1 {
+  background-color: palegoldenrod;
+  border: 1px solid black;
+  display: inline;
+  /* property above turns BLOCK level elements into INLINE */
+}
+.span-demo span {
+  background-color: paleturquoise;
+  border: 1px solid black;
+  display: block;
+  /* property above turns INLINE level  elements into BLOCK */
+}
+/* ---------------------------- */
+
+/* -------------- Difference between INLINE and BLOCK -------------- */
+p span {
+  background-color: palevioletred;
+  border: 1px solid black;
+  width: 500px; /* this proprety is ignored. Just like "height:" */
+  padding: 50px; /* this proprety works, but in a weird way */
+  margin: 20px; /* this proprety works, but only for the line it's on */
+}
+
+.other h1 {
+  /* ALL PROPERTIES WORK FINE because BLOCK level element */
+  background-color: palegreen;
+  border: 1px solid black;
+  width: 300px;
+  padding: 50px;
+  margin: 50px;
+}
+/* ---------------------------- */
+
+/* -------------- INLINE-BLOCK element -------------- */
+section {
+  width: 200px;
+  height: 200px;
+  background-color: olivedrab;
+  border: 5px solid black;
+  margin: 20px;
+  text-align: center;
+  display: inline-block;
+  /* all propertties are respected, because "INLINE-BLOCK" element! */
+}

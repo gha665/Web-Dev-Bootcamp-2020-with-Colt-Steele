@@ -1,0 +1,24 @@
+/* -------***------- {{{RELATIVE UNITS}}} -------***------- */
+
+section {
+  background-color: #6d6875;
+  width: 400px;
+  height: 800px;
+}
+
+/* <div> is nested in the <section> above */
+div {
+  background-color: #e5989b;
+  width: 70%;
+  height: 20%;
+  /* percentage here is relative to the <section> (parent element) */
+}
+
+/* -------------- Different behavior of some properties -------------- */
+h1 {
+  font-size: 40px;
+  border: 1px solid black;
+  line-height: 200%;
+  /* "line-height:" here relative not to the parent but to the ELEMENT ITSELF (<h1>) */
+  /* "высота строки" здесь составляет 200% от 40px, а не от <article>, в котором находится <h1> */
+}
